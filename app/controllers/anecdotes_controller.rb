@@ -1,0 +1,2 @@
+class AnecdotesController < ApplicationController
+end
