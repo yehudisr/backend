@@ -1,4 +1,4 @@
 class AnecdoteSerializer < ActiveModel::Serializer
   attributes :id, :note
-  has_one :family_member
+  # belongs_to :family_member
 end

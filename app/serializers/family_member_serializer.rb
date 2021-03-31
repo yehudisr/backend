@@ -1,4 +1,4 @@
 class FamilyMemberSerializer < ActiveModel::Serializer
   attributes :id, :name, :birthday, :image, :category
-  has_one :user
+  has_many :anecdotes
 end
