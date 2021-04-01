@@ -12,9 +12,9 @@ Rails.application.routes.draw do
 
   get 'family_members', to:'family_members#index'
   post 'family_members', to: 'family_members#create'
-  
+  patch 'family_members/:id', to: 'family_members#update'
   get 'family_members/:id', to:'family_members#show'
   post 'family_members/:id/anecdotes', to: 'anecdotes#create'
 
-
+  delete '/anecdotes/:id', to: 'anecdotes#destroy'
 end
