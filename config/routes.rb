@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get '/users', to: 'users#index'
   get 'users/:id', to: 'users#show'
+  get 'users/:username', to: 'users#login'
 
   get 'family_members', to:'family_members#index'
   post 'family_members', to: 'family_members#create'

@@ -27,7 +27,7 @@ class AnecdotesController < ApplicationController
     def destroy
         anecdote = Anecdote.find(params[:id])
         anecdote.destroy
-        render json: anecdote
+        render json: params[:id]
     end
 
     private

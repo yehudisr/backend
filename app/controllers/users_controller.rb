@@ -23,6 +23,11 @@ class UsersController < ApplicationController
         render json: user
     end
 
+    def login 
+        user = User.find_by(params[:name])
+        render json: user
+    end
+
 
     def destroy
        user = User.find(params[:id])
